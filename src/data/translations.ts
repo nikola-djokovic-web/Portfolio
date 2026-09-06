@@ -28,9 +28,9 @@ export const UI_TEXT: Record<string, Record<Language, string>> = {
     sr: 'Kontakt',
   },
   statusAvailable: {
-    en: 'Available for frontend roles',
-    de: 'Verfügbar für Frontend-Rollen',
-    sr: 'Dostupan za nove projekte',
+    en: 'Building thoughtful digital experiences',
+    de: 'Ich entwickle durchdachte digitale Erlebnisse',
+    sr: 'Gradim promišljena digitalna iskustva',
   },
   viewResume: {
     en: 'View Resume',
@@ -349,9 +349,9 @@ export const UI_TEXT: Record<string, Record<Language, string>> = {
 
   // Footer
   footerCrafted: {
-    en: 'Engineered with React 19, TypeScript, Tailwind CSS & Motion. Zero UI slop.',
-    de: 'Entwickelt mit React 19, TypeScript, Tailwind CSS & Motion. Keine generischen Vorlagen.',
-    sr: 'Izrađeno uz React 19, TypeScript, Tailwind CSS i Motion. Bez generičkih šablona.',
+    en: 'Engineered with React 19, TypeScript, Tailwind CSS & Motion.',
+    de: 'Entwickelt mit React 19, TypeScript, Tailwind CSS & Motion.',
+    sr: 'Izrađeno uz React 19, TypeScript, Tailwind CSS i Motion.',
   },
   footerRights: {
     en: 'All rights reserved.',

@@ -8,7 +8,6 @@ interface HeaderProps {
   onSelectLang: (lang: Language) => void;
   theme: Theme;
   onToggleTheme: () => void;
-  onOpenResume: () => void;
   activeSection: string;
 }
 
@@ -17,7 +16,6 @@ export const Header: React.FC<HeaderProps> = ({
   onSelectLang,
   theme,
   onToggleTheme,
-  onOpenResume,
   activeSection,
 }) => {
   const t = (key: string) => UI_TEXT[key]?.[currentLang] || key;
@@ -48,14 +46,6 @@ export const Header: React.FC<HeaderProps> = ({
             </span>
           </a>
 
-          {/* Availability pill */}
-          <div className="hidden xl:flex items-center gap-2 px-2.5 py-1 rounded-full text-xs font-mono font-medium bg-emerald-500/10 border border-emerald-500/30 text-emerald-700 dark:text-emerald-400">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-            </span>
-            <span>{t('statusAvailable')}</span>
-          </div>
         </div>
 
         {/* Desktop Navigation */}
@@ -120,8 +110,9 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Resume Modal Trigger */}
           <button
             id="open-resume-btn"
-            onClick={onOpenResume}
             className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium border border-cyan-600/30 dark:border-cyan-500/40 text-cyan-700 dark:text-cyan-400 bg-cyan-50 dark:bg-cyan-500/10 hover:bg-cyan-100 dark:hover:bg-cyan-500/20 transition-all shadow-sm"
+            onClick={() => window.open('/assets/NIKOLA-ĐOKOVIĆ-CV.pdf', '_blank', 'noopener,noreferrer')}
+            type="button"
           >
             <FileText className="w-3.5 h-3.5" />
             <span className="hidden sm:inline">{t('viewResume')}</span>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Language } from '../types';
 import { UI_TEXT } from '../data/translations';
 import { PERSONAL_INFO } from '../data/portfolioData';
-import { ArrowUp, Terminal } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 
 interface FooterProps {
   currentLang: Language;
@@ -19,10 +19,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang }) => {
     <footer className="py-12 border-t border-slate-800/60 dark:border-slate-800/60 light:border-slate-200 bg-slate-950/80 dark:bg-slate-950/80 light:bg-white text-xs text-slate-400 dark:text-slate-400 light:text-slate-600 transition-colors">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
-          <div className="flex items-center gap-1.5 font-mono text-slate-300 dark:text-slate-300 light:text-slate-800">
-            <Terminal className="w-3.5 h-3.5 text-cyan-400 dark:text-cyan-400 light:text-cyan-700" />
-            <span>ND // 2026</span>
-          </div>
+          
           <span>•</span>
           <span>{t('footerCrafted')}</span>
         </div>

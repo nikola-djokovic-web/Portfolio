@@ -113,7 +113,6 @@ export default function App() {
           onSelectLang={setCurrentLang}
           theme={theme}
           onToggleTheme={toggleTheme}
-          onOpenResume={() => setIsResumeOpen(true)}
           activeSection={activeSection}
         />
 
