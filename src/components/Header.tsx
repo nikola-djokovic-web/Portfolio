@@ -108,16 +108,17 @@ export const Header: React.FC<HeaderProps> = ({
           </button>
 
           {/* Resume Modal Trigger */}
-          <button
+          <a
             id="open-resume-btn"
+            href="/assets/NIKOLA-DJOKOVIC-CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium border border-cyan-600/30 dark:border-cyan-500/40 text-cyan-700 dark:text-cyan-400 bg-cyan-50 dark:bg-cyan-500/10 hover:bg-cyan-100 dark:hover:bg-cyan-500/20 transition-all shadow-sm"
-            onClick={() => window.open('/assets/NIKOLA-ĐOKOVIĆ-CV.pdf', '_blank', 'noopener,noreferrer')}
-            type="button"
           >
             <FileText className="w-3.5 h-3.5" />
             <span className="hidden sm:inline">{t('viewResume')}</span>
             <span className="sm:hidden">CV</span>
-          </button>
+          </a>
         </div>
       </div>
     </header>
