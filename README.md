@@ -1,20 +1,18 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Nikola Djokovic | Frontend Developer Portfolio
 
-# Run and deploy your AI Studio app
+Personal portfolio website for Nikola Djokovic, a frontend developer focused on building polished, responsive, and user-friendly web experiences.
 
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/630c7738-8649-459c-9d6e-0018cacb0b2e
+The site showcases my experience, skills, selected projects, and ways to get in touch.
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
+**Prerequisites:** Node.js
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
