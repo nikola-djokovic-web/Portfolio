@@ -74,7 +74,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({
               Nikola Djokovic
             </h1>
             <p className="text-base font-medium text-cyan-400 dark:text-cyan-400 light:text-cyan-700 mb-3">
-              Senior Frontend Developer (React, Vue.js, TypeScript)
+              Frontend Developer
             </p>
             <div className="flex flex-wrap gap-4 text-xs font-mono text-slate-400 dark:text-slate-400 light:text-slate-600">
               <span className="flex items-center gap-1">
@@ -83,11 +83,11 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({
               </span>
               <span className="flex items-center gap-1">
                 <MapPin className="w-3.5 h-3.5" />
-                Europe (CET) • Remote / Hybrid
+                Niš, Serbia
               </span>
               <span className="flex items-center gap-1">
                 <Globe className="w-3.5 h-3.5" />
-                English (Fluent), German (Working proficiency)
+                Serbian (Native), English (Advanced), Spanish (Intermediate), German (Basic)
               </span>
             </div>
           </div>
@@ -98,7 +98,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({
               Professional Summary
             </h2>
             <p className="text-xs sm:text-sm leading-relaxed text-slate-300 dark:text-slate-300 light:text-slate-700">
-              Frontend Engineer with 4+ years of hands-on experience designing and scaling production-grade web applications. Deep expertise in React, Next.js, and Vue.js ecosystems, complemented by practical full-stack capabilities in Laravel, PostgreSQL, Prisma ORM, and React Native. Daily adopter of AI-augmented engineering (Claude, Gemini, Codex) for accelerated prototyping, clean refactoring, and comprehensive edge-case testing while upholding rigorous code craftsmanship, WCAG AA accessibility, and Web Vitals standards.
+              Frontend Developer with several years of professional experience building, maintaining, and scaling modern web applications in real production environments. Strong focus on clean architecture, user experience, and maintainable code. Experienced with React, Vue.js, TypeScript, Laravel, REST APIs, and enterprise-level web applications. I also use modern AI tools to improve development workflows and deliver reliable, efficient solutions.
             </p>
           </div>
 
@@ -113,7 +113,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({
                   Frontend & UI Craft
                 </div>
                 <div className="text-slate-400 dark:text-slate-400 light:text-slate-600 space-y-0.5">
-                  React 19, Next.js, Vue 3, TypeScript, JavaScript (ESNext), Tailwind CSS, shadcn/ui, Motion, Pinia, Zustand
+                  React, Vue.js, TypeScript, JavaScript, HTML, CSS, Bootstrap, PrimeVue, jQuery
                 </div>
               </div>
               <div className="p-3 rounded-lg bg-slate-950/50 dark:bg-slate-950/50 light:bg-slate-50 border border-slate-800 dark:border-slate-800 light:border-slate-200">
@@ -121,7 +121,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({
                   Backend, DB & Mobile
                 </div>
                 <div className="text-slate-400 dark:text-slate-400 light:text-slate-600 space-y-0.5">
-                  Laravel (PHP), PostgreSQL, Prisma ORM, Next.js Server Actions, React Native (iOS/Android), REST APIs
+                  Laravel (PHP), ASP.NET REST APIs, REST API integration, MySQL, CRUD
                 </div>
               </div>
               <div className="p-3 rounded-lg bg-slate-950/50 dark:bg-slate-950/50 light:bg-slate-50 border border-slate-800 dark:border-slate-800 light:border-slate-200">
@@ -129,7 +129,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({
                   AI Workflow & Tooling
                 </div>
                 <div className="text-slate-400 dark:text-slate-400 light:text-slate-600 space-y-0.5">
-                  Claude, Gemini, Codex / GitHub Copilot, Git & GitHub, Vite, Supabase, DATEV, Yousign, Stripe APIs
+                  Git, GitHub, GitHub Copilot, DATEV, Yousign, Stripe APIs, jsPDF
                 </div>
               </div>
             </div>

@@ -13,7 +13,7 @@ export const PERSONAL_INFO = {
 export const STATS: StatMetric[] = [
   {
     id: 'exp',
-    value: '4+',
+      value: '8+',
     label: {
       en: 'Years of experience',
       de: 'Jahre Berufserfahrung',
@@ -27,104 +27,105 @@ export const STATS: StatMetric[] = [
   },
   {
     id: 'features',
-    value: '20+',
+      value: '4',
     label: {
-      en: 'Production features delivered',
-      de: 'Erfolgreich gelieferte Features',
-      sr: 'Isporučenih produkcionih funkcionalnosti',
+      en: 'Professional roles documented',
+      de: 'Dokumentierte berufliche Stationen',
+      sr: 'Dokumentovane profesionalne uloge',
     },
     subtext: {
-      en: 'Across SaaS & enterprise platforms',
-      de: 'In SaaS- & Enterprise-Plattformen',
-      sr: 'Kroz SaaS i poslovne sisteme',
+      en: 'ITM, freelance work, and Cubes School',
+      de: 'ITM, Freelance-Arbeit und Cubes School',
+      sr: 'ITM, freelance rad i Cubes School',
     },
   },
   {
     id: 'stacks',
-    value: '2',
+    value: '4',
     label: {
-      en: 'Primary frontend stacks',
-      de: 'Primäre Frontend-Stacks',
-      sr: 'Glavna frontend tehnološka steka',
+      en: 'Languages spoken',
+      de: 'Gesprochene Sprachen',
+      sr: 'Jezici',
     },
     subtext: {
-      en: 'Deep expertise in React & Vue ecosystems',
-      de: 'Tiefes Fachwissen in React & Vue Ökosystemen',
-      sr: 'Duboka ekspertiza u React & Vue ekosistemima',
+      en: 'Serbian, English, Spanish, German',
+      de: 'Serbisch, Englisch, Spanisch, Deutsch',
+      sr: 'Srpski, engleski, španski, nemački',
     },
   },
   {
     id: 'performance',
-    value: '99+',
+      value: '2018',
     label: {
-      en: 'Lighthouse Performance Score',
-      de: 'Lighthouse Performance-Score',
-      sr: 'Lighthouse indeks performansi',
+      en: 'Career started',
+      de: 'Karrierestart',
+      sr: 'Početak karijere',
     },
     subtext: {
-      en: 'Zero layout shift & sub-second TTI',
-      de: 'Keine Layout-Shifts & minimale Ladezeiten',
-      sr: 'Bez pomeranja rasporeda i trenutan odziv',
+      en: 'Web development since March 2018',
+      de: 'Webentwicklung seit März 2018',
+      sr: 'Web razvoj od marta 2018.',
     },
   },
 ];
 
 export const PROJECTS: Project[] = [
   {
-    id: 'mini-property',
-    title: 'MiNi Property',
+    id: 'iri-website',
+    title: 'Institute for Development and Innovation (IRI)',
+    client: 'Freelance',
     badge: {
-      en: 'Property Management App',
-      de: 'Immobilien-Management-App',
-      sr: 'Aplikacija za upravljanje nekretninama',
+      en: 'Institutional Website & Admin Panel',
+      de: 'Institutionelle Website & Administrationsbereich',
+      sr: 'Web prezentacija i administrativni panel',
     },
     category: {
-      en: 'Full-Cycle SaaS Platform',
-      de: 'Full-Cycle SaaS Plattform',
-      sr: 'Celovita SaaS platforma',
+      en: 'Full-Stack Web Development',
+      de: 'Full-Stack-Webentwicklung',
+      sr: 'Full-Stack web razvoj',
     },
     description: {
-      en: 'Property management platform for tenant onboarding, lease tracking, rent collection, and maintenance workflows. Built role-based access, property listings, document management, and AI-assisted listing content for a service-focused rental experience.',
-      de: 'Plattform für Mieter-Onboarding, Mietvertragsverfolgung, Mietinkasso und Instandhaltungs-Workflows. Mit rollenbasierter Zugriffskontrolle, Objektanzeigen, Dokumentenverwaltung und KI-gestützter Angebotserstellung.',
-      sr: 'Platforma za upravljanje nekretninama koja pokriva registraciju stanara, praćenje ugovora o zakupu, naplatu stanarine i zahteve za održavanje. Sa ulogama pristupa, oglasima, dokumentima i AI kreiranjem sadržaja.',
+      en: 'Website for the Institute for Development and Innovation (IRI), including a responsive public presentation and an administration panel for managing news, projects, and analytical content.',
+      de: 'Website des Institute for Development and Innovation (IRI) mit responsiver Präsentation und Administrationsbereich zur Verwaltung von Nachrichten, Projekten und analytischen Inhalten.',
+      sr: 'Web prezentacija Instituta za razvoj i inovacije (IRI), sa responzivnim javnim delom i administrativnim panelom za upravljanje vestima, projektima i analitičkim sadržajem.',
     },
-    tags: ['React', 'Next.js', 'Supabase', 'AI Features', 'Tailwind CSS', 'TypeScript'],
+    tags: ['Laravel', 'PHP', 'HTML', 'CSS', 'Bootstrap', 'MySQL'],
     metrics: [
       {
-        value: '99/100',
+        value: 'Laravel',
         label: {
-          en: 'Lighthouse Web Vitals',
-          de: 'Lighthouse Web Vitals',
-          sr: 'Lighthouse Web Vitals',
+          en: 'Application framework',
+          de: 'Anwendungsframework',
+          sr: 'Framework aplikacije',
         },
       },
       {
-        value: '-42%',
+        value: 'CRUD',
         label: {
-          en: 'Tenant Onboarding Time',
-          de: 'Kürzere Onboarding-Zeit',
-          sr: 'Skraćenje vremena prijave',
+          en: 'Content management',
+          de: 'Inhaltsverwaltung',
+          sr: 'Upravljanje sadržajem',
         },
       },
       {
-        value: '100%',
+        value: 'RBAC',
         label: {
-          en: 'Type-Safe Data Layer',
-          de: 'Typsichere Datenschicht',
-          sr: 'Tipski bezbedan sloj podataka',
+          en: 'User access control',
+          de: 'Benutzerzugriffskontrolle',
+          sr: 'Kontrola pristupa korisnika',
         },
       },
     ],
     caseStudy: {
       challenge: {
-        en: 'Rental management software often suffers from convoluted multi-screen interfaces, slow table rendering on large lease datasets, and complex permission handling between property managers and individual tenants.',
-        de: 'Immobilienverwaltungssoftware leidet oft unter unübersichtlichen Oberflächen, langsamer Tabellendarstellung bei großen Datensätzen und fehleranfälligen Berechtigungsstrukturen zwischen Managern und Mietern.',
-        sr: 'Softver za upravljanje zakupom često pati od pretrpanih ekrana, sporog renderovanja obimnih tabela i složene podele dozvola između menadžera i zakupaca.',
+        en: 'The client needed a responsive public website and a manageable way to maintain news, projects, and analytical content.',
+        de: 'Der Kunde benötigte eine responsive Website und eine einfache Verwaltung von Nachrichten, Projekten und analytischen Inhalten.',
+        sr: 'Klijentu je bila potrebna responzivna web prezentacija i jednostavno upravljanje vestima, projektima i analitičkim sadržajem.',
       },
       solution: {
-        en: 'Architected a modular Next.js application leveraging Server Components for immediate initial data load and client-side optimistic UI for instantaneous rent tracking. Integrated Supabase Row-Level Security (RLS) and designed an intuitive AI-assisted description generator.',
-        de: 'Entwicklung einer modularen Next.js-Architektur mit React Server Components für blitzschnelle Ladezeiten und optimistischem UI für verzögerungsfreie Statusaktualisierungen. Integrierte Supabase Row-Level Security (RLS) und KI-Textgenerierung.',
-        sr: 'Arhitektura u Next.js-u uz Server Components za brz inicijalni prikaz i optimističan UI za trenutne promene statusa uplata. Implementirana Supabase bezbednost po redovima (RLS) i pametno AI generisanje opisa nekretnina.',
+        en: 'Built the full-stack solution with Laravel, HTML, CSS, and Bootstrap, including an administration panel, CRUD workflows, and user roles and access control.',
+        de: 'Umsetzung der Full-Stack-Lösung mit Laravel, HTML, CSS und Bootstrap einschließlich Administrationsbereich, CRUD-Workflows sowie Rollen- und Zugriffskontrolle.',
+        sr: 'Izrađeno je full-stack rešenje uz Laravel, HTML, CSS i Bootstrap, sa administrativnim panelom, CRUD tokovima i korisničkim ulogama i kontrolom pristupa.',
       },
       architectureHighlights: {
         en: [
@@ -147,9 +148,9 @@ export const PROJECTS: Project[] = [
         ],
       },
       impact: {
-        en: 'Increased property manager daily productivity by 35% and achieved a near-perfect 99/100 performance rating on mobile and desktop devices.',
-        de: 'Steigerung der täglichen Produktivität von Immobilienverwaltern um 35 % bei konstant 99/100 Performance-Scores auf allen Endgeräten.',
-        sr: 'Povećana dnevna produktivnost menadžera za 35% uz stabilnu ocenu performansi 99/100 na mobilnim i desktop uređajima.',
+        en: 'Delivered an end-to-end web solution covering the public presentation, backend logic, administration, content management, and access control.',
+        de: 'Umsetzung einer vollständigen Weblösung mit öffentlicher Präsentation, Backend-Logik, Administration, Inhaltsverwaltung und Zugriffskontrolle.',
+        sr: 'Isporučeno je kompletno web rešenje koje obuhvata javnu prezentaciju, backend logiku, administraciju, upravljanje sadržajem i kontrolu pristupa.',
       },
       codeSnippet: {
         filename: 'src/features/leases/useOptimisticRent.ts',
@@ -536,35 +537,67 @@ export const SKILLS_DATA: SkillItem[] = [
 
 export const WORK_EXPERIENCE: ExperienceItem[] = [
   {
-    period: '2023 - Present',
+    period: '01/2025 - 2026',
     role: {
       en: 'Frontend Developer',
       de: 'Frontend-Entwickler',
       sr: 'Frontend programer',
     },
-    company: 'ITM Technologies / Client Solutions',
-    location: 'Remote',
+    company: 'ITM Technologies',
+    location: 'Niš, Serbia',
     description: {
-      en: 'Lead frontend architect for Stammdaten2Go master data suite. Integrated DATEV fiscal standards, Yousign digital signature workflows, and Stripe billing. Delivered 15+ complex production features on Vue.js & TypeScript.',
-      de: 'Frontend-Architektur für die Stammdaten2Go Plattform. DATEV-Anbindung, Yousign Signatur-Workflows und Stripe-Billing. Über 15 produktive Features in Vue.js & TypeScript umgesetzt.',
-      sr: 'Vodeći frontend programer za Stammdaten2Go sistem matičnih podataka. Integracija DATEV računovodstvenog standarda, Yousign potpisa i Stripe naplate.',
+      en: 'Developed eRechnung2Go, an application for creating, managing, and validating electronic invoices according to German XRechnung standards. Built invoice interfaces, PDF representations with jsPDF, incoming and outgoing invoice views, and scheduled task workflows for automated invoice creation and delivery.',
+      de: 'Entwicklung von eRechnung2Go zur Erstellung, Verwaltung und Validierung elektronischer Rechnungen nach dem deutschen XRechnung-Standard. Rechnungsoberflächen, PDF-Darstellungen mit jsPDF und geplante Workflows für Erstellung und Versand.',
+      sr: 'Razvoj aplikacije eRechnung2Go za kreiranje, upravljanje i validaciju elektronskih faktura prema nemačkom XRechnung standardu. Izrada interfejsa, PDF prikaza uz jsPDF, pregleda ulaznih i izlaznih faktura i zakazanih tokova za automatizovano kreiranje i slanje.',
     },
-    tech: ['Vue.js', 'TypeScript', 'DATEV Integration', 'Yousign', 'Pinia', 'Tailwind CSS'],
+    tech: ['Vue.js Composition API', 'PrimeVue', 'jsPDF', 'ASP.NET REST API', 'GitHub Copilot'],
   },
   {
-    period: '2021 - 2023',
+    period: '04/2024 - 2025',
     role: {
       en: 'Frontend Web Developer',
       de: 'Frontend Webentwickler',
       sr: 'Frontend web programer',
     },
-    company: 'Property SaaS & Digital Products',
-    location: 'Hybrid / Remote',
+    company: 'ITM Technologies',
+    location: 'Niš, Serbia',
     description: {
-      en: 'Architected full-featured real estate management tools (MiNi Property). Designed role-based tenant portals, dynamic listing engines, and automated contract workflows in React & Next.js.',
-      de: 'Konzeption und Entwicklung von Immobilien-Management-Tools (MiNi Property). Rollenbasierte Mieterportale, dynamische Inserate und automatisierte Workflows mit React & Next.js.',
-      sr: 'Razvoj kompletnih alata za upravljanje nekretninama (MiNi Property). Portali za stanare, napredni oglasi i automatizovani ugovori u React-u i Next.js-u.',
+      en: 'Developed Stammdaten2Go for centralized management of customers, companies, contacts, legal and tax data. Built complex forms, multi-step wizards, document management, DATEV synchronization, Yousign digital signatures, and Stripe subscription flows.',
+      de: 'Entwicklung von Stammdaten2Go zur zentralen Verwaltung von Kunden-, Unternehmens-, Kontakt-, Rechts- und Steuerdaten. Komplexe Formulare, Dokumentenverwaltung, DATEV-Synchronisierung, Yousign und Stripe-Workflows.',
+      sr: 'Razvoj aplikacije Stammdaten2Go za centralizovano upravljanje podacima o klijentima, kompanijama, kontaktima, pravnim i poreskim podacima. Izrada složenih formi, dokumenata, DATEV sinhronizacije, Yousign potpisa i Stripe tokova.',
     },
-    tech: ['React', 'Next.js', 'Supabase', 'TypeScript', 'Tailwind CSS', 'REST API'],
+    tech: ['Vue.js Composition API', 'PrimeVue', 'ASP.NET REST API', 'DATEV', 'Yousign', 'Stripe'],
+  },
+  {
+    period: '11/2018 - 2023',
+    role: {
+      en: 'Full-Stack Web Developer',
+      de: 'Full-Stack-Webentwickler',
+      sr: 'Full-Stack web developer',
+    },
+    company: 'Freelancer - Web Developer',
+    location: 'Niš, Serbia',
+    description: {
+      en: 'Developed and maintained the website of the Institute for Development and Innovation (IRI) using Laravel, HTML, CSS, and Bootstrap. Built an administration panel, CRUD functionality, and user roles and access control.',
+      de: 'Entwicklung und Wartung der Website des Institute for Development and Innovation (IRI) mit Laravel, HTML, CSS und Bootstrap. Umsetzung eines Administrationsbereichs, von CRUD-Funktionen sowie Rollen- und Zugriffskontrolle.',
+      sr: 'Razvoj i održavanje web prezentacije Instituta za razvoj i inovacije (IRI) uz Laravel, HTML, CSS i Bootstrap. Izrada administrativnog panela, CRUD funkcionalnosti i upravljanja korisničkim ulogama i pristupom.',
+    },
+    tech: ['Laravel', 'PHP', 'HTML', 'CSS', 'Bootstrap', 'MySQL'],
+  },
+  {
+    period: '03/2018 - 11/2018',
+    role: {
+      en: 'Junior Web Developer / Intern',
+      de: 'Junior Webentwickler / Praktikant',
+      sr: 'Junior web developer / praktikant',
+    },
+    company: 'Cubes School',
+    location: 'Niš, Serbia',
+    description: {
+      en: 'Participated in the development of a PHP web store and a Laravel blog. Learned to create CRUD functionality, host websites, and build Laravel projects from scratch.',
+      de: 'Mitarbeit an einem PHP-Webshop und einem Laravel-Blog. Erstellung von CRUD-Funktionen, Hosting von Websites und Entwicklung von Laravel-Projekten von Grund auf.',
+      sr: 'Učešće u razvoju web prodavnice u PHP-u i bloga u Laravel-u. Rad na CRUD funkcionalnostima, hostingu i izradi Laravel projekata od početka.',
+    },
+    tech: ['PHP', 'Laravel', 'MySQL', 'HTML', 'JavaScript', 'Bootstrap', 'Git'],
   },
 ];
