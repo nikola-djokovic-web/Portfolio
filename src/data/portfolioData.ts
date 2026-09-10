@@ -71,115 +71,88 @@ export const STATS: StatMetric[] = [
 
 export const PROJECTS: Project[] = [
   {
-    id: 'iri-website',
-    title: 'Institute for Development and Innovation (IRI)',
-    client: 'Freelance',
+    id: 'mini-property',
+    title: 'MiNi Property',
+    client: 'Personal Project',
     badge: {
-      en: 'Institutional Website & Admin Panel',
-      de: 'Institutionelle Website & Administrationsbereich',
-      sr: 'Web prezentacija i administrativni panel',
+      en: 'Tenant Management Platform',
+      de: 'Mieter-Management-Plattform',
+      sr: 'Platforma za upravljanje stanarima',
     },
     category: {
-      en: 'Full-Stack Web Development',
-      de: 'Full-Stack-Webentwicklung',
-      sr: 'Full-Stack web razvoj',
+      en: 'Multi-Tenant SaaS Application',
+      de: 'Multi-Tenant-SaaS-Anwendung',
+      sr: 'Multi-tenant SaaS aplikacija',
     },
     description: {
-      en: 'Website for the Institute for Development and Innovation (IRI), including a responsive public presentation and an administration panel for managing news, projects, and analytical content.',
-      de: 'Website des Institute for Development and Innovation (IRI) mit responsiver Präsentation und Administrationsbereich zur Verwaltung von Nachrichten, Projekten und analytischen Inhalten.',
-      sr: 'Web prezentacija Instituta za razvoj i inovacije (IRI), sa responzivnim javnim delom i administrativnim panelom za upravljanje vestima, projektima i analitičkim sadržajem.',
+      en: 'Multi-tenant Next.js application for building tenants to report issues, track requests, communicate through live chat, and manage property-related workflows through authenticated tenant and management spaces.',
+      de: 'Multi-Tenant-Next.js-Anwendung, mit der Bewohner Probleme melden, Anfragen verfolgen, per Live-Chat kommunizieren und Immobilien-Workflows in authentifizierten Bereichen verwalten können.',
+      sr: 'Multi-tenant Next.js aplikacija u kojoj stanari zgrada prijavljuju probleme, prate zahteve, komuniciraju putem live chat-a i koriste autentifikovane prostore za upravljanje procesima.',
     },
-    tags: ['Laravel', 'PHP', 'HTML', 'CSS', 'Bootstrap', 'MySQL'],
+    tags: ['Next.js', 'React', 'TypeScript', 'Multi-Tenant', 'Authentication', 'Live Chat'],
     metrics: [
       {
-        value: 'Laravel',
+        value: 'Multi-tenant',
         label: {
-          en: 'Application framework',
-          de: 'Anwendungsframework',
-          sr: 'Framework aplikacije',
+          en: 'Tenant architecture',
+          de: 'Mandantenarchitektur',
+          sr: 'Tenant arhitektura',
         },
       },
       {
-        value: 'CRUD',
+        value: 'Live chat',
         label: {
-          en: 'Content management',
-          de: 'Inhaltsverwaltung',
-          sr: 'Upravljanje sadržajem',
+          en: 'Communication',
+          de: 'Kommunikation',
+          sr: 'Komunikacija',
         },
       },
       {
-        value: 'RBAC',
+        value: 'Auth',
         label: {
-          en: 'User access control',
-          de: 'Benutzerzugriffskontrolle',
-          sr: 'Kontrola pristupa korisnika',
+          en: 'Protected spaces',
+          de: 'Geschützte Bereiche',
+          sr: 'Zaštićeni prostori',
         },
       },
     ],
     caseStudy: {
       challenge: {
-        en: 'The client needed a responsive public website and a manageable way to maintain news, projects, and analytical content.',
-        de: 'Der Kunde benötigte eine responsive Website und eine einfache Verwaltung von Nachrichten, Projekten und analytischen Inhalten.',
-        sr: 'Klijentu je bila potrebna responzivna web prezentacija i jednostavno upravljanje vestima, projektima i analitičkim sadržajem.',
+        en: 'Building tenants need a reliable way to report issues and follow their progress, while property managers need structured workflows, role-based access, and clear communication across multiple buildings.',
+        de: 'Bewohner benötigen eine zuverlässige Möglichkeit, Probleme zu melden und deren Fortschritt zu verfolgen. Verwalter benötigen strukturierte Workflows, rollenbasierten Zugriff und klare Kommunikation über mehrere Gebäude hinweg.',
+        sr: 'Stanari moraju pouzdano da prijave probleme i prate njihov napredak, dok menadžmentu trebaju strukturisani tokovi, pristup po ulogama i jasna komunikacija kroz više zgrada.',
       },
       solution: {
-        en: 'Built the full-stack solution with Laravel, HTML, CSS, and Bootstrap, including an administration panel, CRUD workflows, and user roles and access control.',
-        de: 'Umsetzung der Full-Stack-Lösung mit Laravel, HTML, CSS und Bootstrap einschließlich Administrationsbereich, CRUD-Workflows sowie Rollen- und Zugriffskontrolle.',
-        sr: 'Izrađeno je full-stack rešenje uz Laravel, HTML, CSS i Bootstrap, sa administrativnim panelom, CRUD tokovima i korisničkim ulogama i kontrolom pristupa.',
+        en: 'Built the application in Next.js with authentication and multi-tenant data separation. Implemented issue reporting, ticket-style time management, live chat, and multiple CRUD areas for tenant and property operations.',
+        de: 'Entwicklung der Anwendung mit Next.js, Authentifizierung und Mandantentrennung. Umsetzung von Problemmeldungen, ticketbasiertem Zeitmanagement, Live-Chat und mehreren CRUD-Bereichen für Bewohner- und Immobilienverwaltung.',
+        sr: 'Aplikacija je izgrađena u Next.js-u sa autentifikacijom i odvajanjem podataka po tenantima. Implementirani su prijava problema, upravljanje vremenom po ticketing principu, live chat i različite CRUD sekcije.',
       },
       architectureHighlights: {
         en: [
-          'Atomic design structure with zero unnecessary re-renders',
-          'Virtualised data tables for 1,000+ unit portfolios',
-          'Automated PDF invoice generation and lease status sync',
-          'WCAG AA accessible form controls with robust Zod validation',
+          'Multi-tenant structure for buildings, tenants, and management users',
+          'Issue reporting and ticket-style time management workflows',
+          'Live chat for direct communication between users and management',
+          'Authentication and CRUD sections for property operations',
         ],
         de: [
-          'Atomic-Design-Komponentenstruktur ohne unnötige Re-Renders',
-          'Virtualisierte Tabellen für Bestände mit über 1.000 Einheiten',
-          'Automatisierte PDF-Rechnungserstellung und Mietstatussynchronisation',
-          'Barrierefreie Formulare (WCAG AA) mit robuster Zod-Validierung',
+          'Mandantenstruktur für Gebäude, Bewohner und Verwaltungsnutzer',
+          'Problemmeldungen und ticketbasierte Zeitmanagement-Workflows',
+          'Live-Chat für die direkte Kommunikation mit der Verwaltung',
+          'Authentifizierung und CRUD-Bereiche für Immobilienprozesse',
         ],
         sr: [
-          'Atomic design struktura komponenti bez suvišnih osvežavanja',
-          'Virtuelizovane tabele za portfolije sa preko 1.000 jedinica',
-          'Automatsko generisanje PDF računa i sinhronizacija zakupa',
-          'Pristupačne forme (WCAG AA) sa strogom Zod validacijom',
+          'Multi-tenant struktura za zgrade, stanare i menadžment',
+          'Prijava problema i upravljanje vremenom po ticketing principu',
+          'Live chat za direktnu komunikaciju sa menadžmentom',
+          'Autentifikacija i CRUD sekcije za upravljanje nekretninama',
         ],
       },
       impact: {
-        en: 'Delivered an end-to-end web solution covering the public presentation, backend logic, administration, content management, and access control.',
-        de: 'Umsetzung einer vollständigen Weblösung mit öffentlicher Präsentation, Backend-Logik, Administration, Inhaltsverwaltung und Zugriffskontrolle.',
-        sr: 'Isporučeno je kompletno web rešenje koje obuhvata javnu prezentaciju, backend logiku, administraciju, upravljanje sadržajem i kontrolu pristupa.',
-      },
-      codeSnippet: {
-        filename: 'src/features/leases/useOptimisticRent.ts',
-        code: `export function useOptimisticRent(leaseId: string) {
-  const queryClient = useQueryClient();
-  
-  return useMutation({
-    mutationFn: async (payload: PaymentUpdate) => {
-      return api.leases.recordPayment(leaseId, payload);
-    },
-    onMutate: async (newStatus) => {
-      await queryClient.cancelQueries(['lease', leaseId]);
-      const prev = queryClient.getQueryData(['lease', leaseId]);
-      queryClient.setQueryData(['lease', leaseId], (old: any) => ({
-        ...old,
-        paymentStatus: newStatus.status,
-        lastUpdated: new Date().toISOString()
-      }));
-      return { prev };
-    },
-    onError: (_err, _vars, context) => {
-      queryClient.setQueryData(['lease', leaseId], context?.prev);
-    }
-  });
-}`,
+        en: 'Delivered a working tenant management platform that combines issue reporting, operational tracking, communication, authentication, and multi-tenant property workflows in one application.',
+        de: 'Umsetzung einer Tenant-Management-Plattform mit Problemmeldungen, operativer Nachverfolgung, Kommunikation, Authentifizierung und Multi-Tenant-Immobilien-Workflows.',
+        sr: 'Isporučena je platforma za upravljanje stanarima koja objedinjuje prijavu problema, praćenje procesa, komunikaciju, autentifikaciju i multi-tenant tokove za upravljanje nekretninama.',
       },
     },
-    githubUrl: 'https://github.com',
-    liveUrl: 'https://mini-property.app',
     featured: true,
   },
   {
